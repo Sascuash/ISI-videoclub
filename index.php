@@ -1,8 +1,5 @@
-<html>
-	<head>
- 		<title>Selección de videoclub</title>
-	</head>
-	<body>
+<? include ("header.php"); ?>
+
  		<?php echo '<p>Query para ver videoclubs registrados</p>'; ?>
 	</body>
 </html>

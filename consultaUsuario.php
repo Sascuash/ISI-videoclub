@@ -1,8 +1,5 @@
-<html>
-	<head>
- 		<title>Consulta de los usuarios</title>
-	</head>
-	<body>
+<? include ("header.php"); ?>
+
  		<?php echo '<p>Query para ver videoclubs registrados</p>'; ?>
 	</body>
 </html>

@@ -1,6 +1,6 @@
 <html>
 	<head>
- 		<title>Selección de videoclub</title>
+ 		<title>Resultados de la consulta</title>
 	</head>
 	<body>
  		<?php echo '<p>Query para ver videoclubs registrados</p>'; ?>

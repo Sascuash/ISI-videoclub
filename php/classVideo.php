@@ -1,9 +1,9 @@
 <?php
 	class classVideo {
-		private $dbHost="mysql9.rl-host.com";
-		private $dbUsername="patolin_isi";
-		private $dbPassword="isi2014";
-		private $dbNombre="patolin_isi";
+		private $dbHost="localhost";
+		private $dbUsername="root";
+		private $dbPassword="";
+		private $dbNombre="isi";
 		private $dbPref="video_";
 
 		private function mysqlConnect() {
@@ -68,7 +68,41 @@
 			return $idInsertado;	
 	    }
 
+	    public function listaPeliculas() {
+	    	$this->mysqlConnect();
+	    	$sql="SELECT * FROM video_pelicula ORDER BY nombre ASC";
+	    	$datos=mysql_query($sql);
+	    	$salida='<select multiple id="selPelicula" name="selPelicula">';
+	    	while ($fila=mysql_fetch_array($datos)) {
+	    		$salida.='<option value="'.$fila["id"].'">'.$fila["nombre"].'</option>';
+	    	}
+	    	$salida.="</select>";
+	    	return $salida;
+	    }
 
+	    public function listaSocios() {
+	    	$this->mysqlConnect();
+	    	$sql="SELECT * FROM video_socio ORDER BY nombre ASC";
+	    	$datos=mysql_query($sql);
+	    	$salida='<select id="selSocio" name="selSocio">';
+	    	while ($fila=mysql_fetch_array($datos)) {
+	    		$salida.='<option value="'.$fila["id"].'">'.$fila["nombre"].'</option>';
+	    	}
+	    	$salida.="</select>";
+	    	return $salida;
+	    }
+
+	    public function listaVideoclubs() {
+	    	$this->mysqlConnect();
+	    	$sql="SELECT * FROM video_videoclub ORDER BY calle ASC";
+	    	$datos=mysql_query($sql);
+	    	$salida='<select id="selVideoclub" name="selVideoclub">';
+	    	while ($fila=mysql_fetch_array($datos)) {
+	    		$salida.='<option value="'.$fila["id"].'">'.$fila["calle"].'</option>';
+	    	}
+	    	$salida.="</select>";
+	    	return $salida;
+	    }
 
 	}
 ?>

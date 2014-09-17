@@ -11,5 +11,15 @@
 			<li><a href="index.php">Inicio</a></li>
 			<li><a href="login.php">Login</a></li>
 			<li><a href="alta.php">Alta</a></li>
+			<li><a href="alquiler.php">Alquiler</a></li>
 			<li><a href="consultaUsuario.php">Consulta</a></li>
 		</ul>
+		<?php
+			if (isset($_SESSION["idSocio"])) {
+				echo '<p>Socio actual: '.$_SESSION["idSocio"].'</p>';
+			}
+			if (isset($_SESSION["idVideoclub"])) {
+				echo '<p>Videoclub actual: '.$_SESSION["idVideoclub"].'</p>';
+			}
+		?>
+		

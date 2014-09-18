@@ -104,5 +104,45 @@
 	    	return $salida;
 	    }
 
+	    public function obtieneReporte($idSocio, $fechaActual) {
+	    	$this->mysqlConnect();
+	    	// buscamos el ultimo reporte
+	    	$sql=sprintf("SELECT * FROM ".$this->dbPref."estadistica WHERE id_socio='%' ORDER BY id DESC LIMIT 0,1",
+	    		mysql_escape_string($idSocio)
+	    	); 
+	    	$datos=mysql_query($sql);
+	    	if (mysql_num_rows($datos)==1) {
+	    		$fila=mysql_fetch_array($datos);
+	    		$ultimoReporte=$fila["fecha_generacion"];
+	    	} else {
+	    		$ultimoReporte="1900-01-01";
+	    	}
+
+	    	// generamos el reporte en el rango de fechas
+	    	$sql=sprintf("SELECT id, pago FROM ".$this->dbPref."alquiler WHERE id_socio='%s' AND AND fecha_recogida>'%s' AND fecha_recogida<='%s'",
+	    		mysql_escape_string($idSocio),
+	    		mysql_escape_string($ultimoReporte),
+	    		mysql_escape_string($fechaActual)
+	    	);
+	    	$datos=mysql_query($sql);
+	    	$totalPago=0;
+	    	while ($fila=mysql_fetch_array($datos)) {
+	    		$totalPago+=$fila["pago"];
+	    	}
+
+	    	// insertamos el total en estadistica
+	    	$sql=sprintf("INSERT INTO ".$this->dbPref."estadistica (id_socio, fecha_generacion, total) VALUES ('%s', '%s', '%s')",
+	    		mysql_escape_string($idSocio),
+	    		mysql_escape_string($fechaActual),
+	    		mysql_escape_string($totalPago)
+	    	);
+	    	mysql_query($sql);
+	    	$idInsertado=mysql_insert_id();
+			return $idInsertado;
+	    	
+
+	    }	
+
+
 	}
 ?>

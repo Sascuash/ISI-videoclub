@@ -18,4 +18,7 @@
 	$id=$video->insertaVideoclub("gerente 1", "valencia", "Serpis #80", "44567");
 	echo "<br> videoclub intertado: ".$id;
 
+	$id=$video->obtieneReporte(1, "2014-09-18");
+	echo "<br> reporte intertado: ".$id;
+
 ?>

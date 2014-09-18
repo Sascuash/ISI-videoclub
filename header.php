@@ -9,17 +9,17 @@
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
-			    <font size=6>Videoclub</font>
+			    <font size=6>Videoclub</font>&emsp;
 		    </div>
 		
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
-		        <li><a href="index.php">Inicio</a></li>
+		        <li class="active"><a href="index.php">Inicio</a></li>
 				<li><a href="login.php">Login</a></li>
-				<li><a href="alta.php">Alta</a></li>
+				<li class="active"><a href="alta.php">Alta</a></li>
 				<li><a href="alquiler.php">Alquiler</a></li>
-				<li><a href="consultaUsuario.php">Consulta</a></li>
+				<li class="active"><a href="consultaUsuario.php">Consulta</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->

@@ -154,9 +154,9 @@
 	    		$salida.='No existen datos para el socio seleccionado';
 	    	} else {
 	    		$valorTotal=0;
-	    		$salida.='<table class="table">';
+	    		$salida.='<table class="table table-condensed">';
 
-	    			$salida.='<tr>';
+	    			$salida.='<tr class="warning">';
 	    				$salida.='<th>Fecha</th>';
 	    				$salida.='<th>Valor</th>';
 	    				$valorTotal+=$fila["total"];

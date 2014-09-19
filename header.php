@@ -18,10 +18,9 @@
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav" style="margin-top:4px;">
 		        <li class="active"><a href="index.php">Inicio</a></li>
-				<li><a href="login.php">Login</a></li>
-				<li class="active"><a href="alta.php">Alta</a></li>
-				<li><a href="alquiler.php">Alquiler</a></li>
-				<li class="active"><a href="consultaUsuario.php">Consulta</a></li>
+				<li><a href="alta.php">Alta</a></li>
+				<li class="active"><a href="alquiler.php">Alquiler</a></li>
+				<li><a href="consultaUsuario.php">Consulta</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->

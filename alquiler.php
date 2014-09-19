@@ -28,7 +28,7 @@
  				<input type="hidden" id="oculta" value="" />
  				<p>
  					<label>&nbsp;</label>
- 					<input type="button" value="Guardar" id="btnEnviar" name="btnEnviar"></input>
+ 					<input class="btn btn-info" type="button" value="Guardar" id="btnEnviar" name="btnEnviar"></input>
  				</p>
  				<h2>Alquiler</h2>
  				<p>
@@ -41,15 +41,15 @@
  				</p>
  				<p>
  					<label>&nbsp;</label>
- 					<input type="submit" value="Alquilar" id="btnAlquilar" name="btnAlquilar"/>
+ 					<input class="btn btn-success" type="submit" value="Alquilar" id="btnAlquilar" name="btnAlquilar"/>
  				</p>
  			</form>
  		</div>
  		<div class="span4">
  			<h2>Carrito</h2>
- 			<table class="table table-bordered" id="myTable">
+ 			<table class="table table-condensed" id="myTable">
 				<thead>
-  				  <tr>
+  				  <tr class="warning">
   				    <th>Pelicula</th>
   				    <th>precio</th>
   				  </tr>

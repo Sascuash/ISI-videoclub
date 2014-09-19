@@ -104,12 +104,13 @@
 	    	return $salida;
 	    }
 
-	    public function obtieneReporte($idSocio, $fechaActual) {
+	    public function generaReporte($idSocio, $fechaActual) {
 	    	$this->mysqlConnect();
 	    	// buscamos el ultimo reporte
-	    	$sql=sprintf("SELECT * FROM ".$this->dbPref."estadistica WHERE id_socio='%' ORDER BY id DESC LIMIT 0,1",
+	    	$sql=sprintf("SELECT * FROM ".$this->dbPref."estadistica WHERE id_socio='%s' ORDER BY id DESC LIMIT 0,1",
 	    		mysql_escape_string($idSocio)
 	    	); 
+	    	echo $sql;
 	    	$datos=mysql_query($sql);
 	    	if (mysql_num_rows($datos)==1) {
 	    		$fila=mysql_fetch_array($datos);
@@ -119,11 +120,12 @@
 	    	}
 
 	    	// generamos el reporte en el rango de fechas
-	    	$sql=sprintf("SELECT id, pago FROM ".$this->dbPref."alquiler WHERE id_socio='%s' AND AND fecha_recogida>'%s' AND fecha_recogida<='%s'",
+	    	$sql=sprintf("SELECT id, pago FROM ".$this->dbPref."alquiler WHERE id_socio='%s' AND fecha_recogida>'%s' AND fecha_recogida<='%s'",
 	    		mysql_escape_string($idSocio),
 	    		mysql_escape_string($ultimoReporte),
 	    		mysql_escape_string($fechaActual)
 	    	);
+	    	echo $sql;
 	    	$datos=mysql_query($sql);
 	    	$totalPago=0;
 	    	while ($fila=mysql_fetch_array($datos)) {
@@ -139,8 +141,6 @@
 	    	mysql_query($sql);
 	    	$idInsertado=mysql_insert_id();
 			return $idInsertado;
-	    	
-
 	    }	
 
 

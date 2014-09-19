@@ -5,6 +5,7 @@
 	include ("classVideo.php");
 	$video=new classVideo();
 
+/*
 	$id=$video->insertaSocio("pato", 36, 1, "usr", "12345", "1");
 	echo "<br> socio insertado: ".$id;
 
@@ -17,8 +18,8 @@
 
 	$id=$video->insertaVideoclub("gerente 1", "valencia", "Serpis #80", "44567");
 	echo "<br> videoclub intertado: ".$id;
-
-	$id=$video->obtieneReporte(1, "2014-09-18");
+*/
+	$id=$video->generaReporte(1, "2014-09-18");
 	echo "<br> reporte intertado: ".$id;
 
 ?>

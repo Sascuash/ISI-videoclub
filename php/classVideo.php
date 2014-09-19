@@ -74,7 +74,7 @@
 	    	$datos=mysql_query($sql);
 	    	$salida='<select multiple id="selPelicula" name="selPelicula">';
 	    	while ($fila=mysql_fetch_array($datos)) {
-	    		$salida.='<option value="'.$fila["id"].'">'.$fila["nombre"].'</option>';
+	    		$salida.='<option value="'.$fila["id"].'" rel="'.$fila["precio"].'">'.$fila["nombre"].'</option>';
 	    	}
 	    	$salida.="</select>";
 	    	return $salida;
@@ -104,14 +104,12 @@
 	    	return $salida;
 	    }
 
-<<<<<<< HEAD
 	    public function generaReporte($idSocio, $fechaActual) {
 	    	$this->mysqlConnect();
 	    	// buscamos el ultimo reporte
 	    	$sql=sprintf("SELECT * FROM ".$this->dbPref."estadistica WHERE id_socio='%s' ORDER BY id DESC LIMIT 0,1",
 	    		mysql_escape_string($idSocio)
 	    	); 
-	    	echo $sql;
 	    	$datos=mysql_query($sql);
 	    	if (mysql_num_rows($datos)==1) {
 	    		$fila=mysql_fetch_array($datos);
@@ -126,7 +124,7 @@
 	    		mysql_escape_string($ultimoReporte),
 	    		mysql_escape_string($fechaActual)
 	    	);
-	    	echo $sql;
+	    	
 	    	$datos=mysql_query($sql);
 	    	$totalPago=0;
 	    	while ($fila=mysql_fetch_array($datos)) {
@@ -144,8 +142,61 @@
 			return $idInsertado;
 	    }	
 
+	    public function muestraReportes($idSocio) {
+	    	$this->mysqlConnect();
+	    	// buscamos el ultimo reporte
+	    	$sql=sprintf("SELECT * FROM ".$this->dbPref."estadistica WHERE id_socio='%s' ORDER BY fecha_generacion ASC",
+	    		mysql_escape_string($idSocio)
+	    	); 
+	    	$datos=mysql_query($sql);
+	    	$salida="";
+	    	if (mysql_num_rows($datos)==0) {
+	    		$salida.='No existen datos para el socio seleccionado';
+	    	} else {
+	    		$valorTotal=0;
+	    		$salida.='<table class="table">';
 
-=======
->>>>>>> 98534350ba861136449b2f8611c6dcfde2189bcc
+	    			$salida.='<tr>';
+	    				$salida.='<th>Fecha</th>';
+	    				$salida.='<th>Valor</th>';
+	    				$valorTotal+=$fila["total"];
+	    			$salida.='</tr>';
+
+	    		while ($fila=mysql_fetch_array($datos)) {
+	    			$salida.='<tr>';
+	    				$salida.='<td>'.$fila["fecha_generacion"].'</td>';
+	    				$salida.='<td>'.$fila["total"].'</td>';
+	    				$valorTotal+=$fila["total"];
+	    			$salida.='</tr>';
+	    		}
+
+	    		$salida.='<tr>';
+	    			$salida.='<td>TOTAL</td>';
+	    			$salida.='<td>'.number_format($valorTotal,2).'</td>';
+	    		$salida.='</tr>';
+
+	    		$salida.='</table>';
+	    	}
+	    	return $salida;
+	    }
+
+
+	    public function obtieneNombreSocio($idSocio) {
+	    	$this->mysqlConnect();
+	    	// buscamos el ultimo reporte
+	    	$sql=sprintf("SELECT * FROM ".$this->dbPref."socio WHERE id='%s' LIMIT 0,1",
+	    		mysql_escape_string($idSocio)
+	    	); 
+	    	$datos=mysql_query($sql);
+	    	if (mysql_num_rows($datos)==1) {
+	    		$fila=mysql_fetch_array($datos);
+	    		$salida=$fila["nombre"];
+	    	} else {
+	    		$salida="";
+	    	}
+	    	return $salida;
+	    }
+
+
 	}
 ?>

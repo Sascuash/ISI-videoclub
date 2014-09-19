@@ -3,9 +3,8 @@
 	$video=new classVideo();
 	session_start();
 
-	print_r($_POST);
-	$lista="";
-	$pagoTotal=10;
+	$lista=$_POST["oculta"];
+	$pagoTotal=$_POST["precioTotal"];
 
 	if ($_POST["btnAlquilar"]=="Alquilar" && count($lista)>0) {
 		$recogida=$_POST["txtFechaRecogida"];
@@ -25,7 +24,8 @@
 				<p>
 					<?php echo $video->listaPeliculas(); ?>
 				</p>
- 				<input type="hidden" id="oculta" value="" />
+ 				<input type="hidden" id="oculta" value="" name="oculta"/>
+ 				<input type="hidden" id="precioTotal" value="" name="precioTotal"/>
  				<p>
  					<label>&nbsp;</label>
  					<input class="btn btn-info" type="button" value="Guardar" id="btnEnviar" name="btnEnviar"></input>
@@ -33,11 +33,11 @@
  				<h2>Alquiler</h2>
  				<p>
  					<label>Fecha Recogida</label>
- 					<input type="text" name="txtFechaRecogida" value="" id="txtFechaRecogida"/>
+ 					<input type="text" name="txtFechaRecogida" value="<?php echo date("Y-m-d"); ?>" id="txtFechaRecogida"/>
  				</p>
  				<p>
  					<label>Fecha Devolucion</label>
- 					<input type="text" name="txtFechaDevolucion" value="" id="txtFechaDevolucion"/>
+ 					<input type="text" name="txtFechaDevolucion" value="<?php $Date=date("Y-m-d"); echo date('Y-m-d', strtotime($Date. ' + 8 day')); ?>" id="txtFechaDevolucion"/>
  				</p>
  				<p>
  					<label>&nbsp;</label>
@@ -72,7 +72,10 @@
 
 	var btnEnviar = document.getElementById("btnEnviar");
 	var oculta = document.getElementById("oculta");
+	var precioTotal = document.getElementById("precioTotal");
 	var selPelicula = document.getElementById("selPelicula");
+
+	precioTotal.value=parseFloat(0.0);
 
 	btnEnviar.onclick=function(){
       	oculta.value = oculta.value + selPelicula.value + "|";
@@ -85,7 +88,8 @@
 		var cell2 = row.insertCell(1);
 		// Add some text to the new cells:
 		cell1.innerHTML = $("#selPelicula option:selected").text();
-		cell2.innerHTML = "34";
+		cell2.innerHTML = $("#selPelicula option:selected").attr("rel");
+		precioTotal.value = parseFloat(precioTotal.value)+parseFloat($("#selPelicula option:selected").attr("rel"));
 	}
 
 </script>

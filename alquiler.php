@@ -46,7 +46,7 @@
  			</form>
  		</div>
  		<div class="span4">
- 			<h2>Carrito</h2>
+ 			<h2>Carrito (<span id="sumaParcial"></span>&euro;)</h2>
  			<table class="table table-condensed" id="myTable">
 				<thead>
   				  <tr class="warning">
@@ -74,8 +74,10 @@
 	var oculta = document.getElementById("oculta");
 	var precioTotal = document.getElementById("precioTotal");
 	var selPelicula = document.getElementById("selPelicula");
+	var sumaParcial = document.getElementById("sumaParcial");
 
 	precioTotal.value=parseFloat(0.0);
+	sumaParcial.innerHTML=parseFloat(0.0);
 
 	btnEnviar.onclick=function(){
       	oculta.value = oculta.value + selPelicula.value + "|";
@@ -90,6 +92,7 @@
 		cell1.innerHTML = $("#selPelicula option:selected").text();
 		cell2.innerHTML = $("#selPelicula option:selected").attr("rel");
 		precioTotal.value = parseFloat(precioTotal.value)+parseFloat($("#selPelicula option:selected").attr("rel"));
+		sumaParcial.innerHTML = parseFloat(sumaParcial.innerHTML)+parseFloat($("#selPelicula option:selected").attr("rel"));
 	}
 
 </script>

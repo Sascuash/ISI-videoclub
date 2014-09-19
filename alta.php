@@ -18,7 +18,7 @@
 	}
 ?>
 <?php include ("header.php"); ?>
-		<form method="post" action="">
+	<form method="post" action="">
 		<?php
 			if ($idSocioInsertado>0) {
 				?>
@@ -28,8 +28,10 @@
 				<?php
 			}
 		?>
- 		<h2>Alta de Socios</h2>
- 		<h3>Nuevo Socio</h3>
+ 	<h2>Alta de Socios</h2>
+ 	<div class="row-fluid">
+		<div class="span6">
+ 		<h3>Nuevo Socio:</h3>
  		
  			<p>
  				<label>Nombre</label>
@@ -41,16 +43,18 @@
  			</p>
  			<p>
  				<label>&nbsp;</label>
- 				<input type="submit" value="Guardar" id="btnEnviar" name="btnEnviar"/>
+ 				<input class="btn btn-success" type="submit" value="Guardar" id="btnEnviar" name="btnEnviar"/>
  			</p>
- 		
- 		<h3>Socio Existente</h3>
- 		<p>
-			<?php echo $video->listaSocios(); ?>
-		</p>
- 		<p>
- 			<label>&nbsp;</label>
- 			<input type="submit" value="Seleccionar" id="btnSeleccionar" name="btnSeleccionar"/>
- 		</p>
- 		</form>
+ 		</div>
+ 		<div class="span6">
+ 			<h3>Socio Existente:</h3>
+ 			<p>
+				<?php echo $video->listaSocios(); ?>
+			</p>
+ 			<p>
+ 				<label>&nbsp;</label>
+ 				<input class="btn btn-primary" type="submit" value="Seleccionar" id="btnSeleccionar" name="btnSeleccionar"/>
+ 			</p>
+ 		</div>
+ 	</form>
 <?php include ("footer.php"); ?>

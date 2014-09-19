@@ -1,0 +1,470 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"id",
+				"idVideoclub"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"strre",
+				"str_replace"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"margi",
+				"margin-right"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"t",
+				"text-decoration"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"font-se",
+				"font-style"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"backr",
+				"background-color"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"cla",
+				"class_name"
+			],
+			[
+				"lista",
+				"listaArticulos"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"he",
+				"header_signup_s1"
+			],
+			[
+				"border",
+				"border-bottom"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "php/classVideo.php",
+			"settings":
+			{
+				"buffer_size": 5209,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "php/test.php",
+			"settings":
+			{
+				"buffer_size": 672,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 360.0,
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 174.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Patricio/Documents/websites/ISI-video/php/test.php",
+		"/C/Users/Patricio/Documents/websites/ISI-video/php/classVideo.php",
+		"/C/Users/Patricio/Documents/websites/ISI-video/header.php",
+		"/C/Users/Patricio/Documents/websites/ISI-video/sftp-config.json",
+		"/C/Users/Patricio/Documents/websites/ISI-video/inc/conexion.php",
+		"/C/Users/Patricio/Documents/websites/pintaconluz/thumb.php",
+		"/C/Users/Patricio/Documents/websites/pintaconluz/listaFotos.php",
+		"/C/Users/Patricio/Documents/websites/pintaconluz/error_log",
+		"/C/Users/Patricio/Documents/websites/pintaconluz/sftp-config.json",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/ventas/ajax.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/compras/ajax.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/ventas/ajax_visitas.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/compras/ajax_visitas.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/ventas/nuevo.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/ventas/index.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/ventas/detalle.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/compras/detalle.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/header.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/compras/nuevo.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/index.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/compras/index.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/ajax.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/clientes-compra.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/nuevo-compra.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/clientes-venta.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/clientes.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/clientes-total.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/nuevo.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/classQuery.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/sftp-config.json",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/logout.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/style.css",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/footer.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/detalle.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/ajax_visitas.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/clientes/visitas.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/crm/crm_visitas.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/crm/crm_clientes.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/export/export.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/koolcontrols/Resources/config.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/koolcontrols/Examples/KoolGrid/Filtering/Basic_Filtering/example.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/koolcontrols/Resources/runexample.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/koolcontrols/Resources/control_overview.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/koolcontrols/Examples/KoolGrid/index.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/phpgrid/conf.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/koolcontrols/index.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/phpgrid/index.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/phpgrid/crm_visitas.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/-- phpMyAdmin SQL Dump",
+		"/C/Users/Patricio/Documents/websites/inveraustro/phpgrid/examples/advanced_search.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/crm/index.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/website/wp-content/themes/inveraustro/footer.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/website/wp-content/themes/inveraustro/header.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/website/wp-content/themes/inveraustro/single.php",
+		"/C/Users/Patricio/Documents/websites/inveraustro/website/wp-content/themes/inveraustro/style.css",
+		"/C/Users/Patricio/Documents/sublimetext/Data/Packages/User/SFTP.errors.log",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/style.css",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/page-calculadora.php",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/index.php",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/functions.php",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/header.php",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/style.min.css",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/page.php",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/page-home.php",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/footer.php",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/page-productos-interna.php",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/js/jqzoom/jquery.jqzoom.css",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/js/jcarousel/jcarousel.css",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/page-productos.php",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/js/jcarousel/jcarousel1.basic.js",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/page-contacto.php",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/js/jcarousel/jcarousel1.css",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/js/jcarousel/jcarousel.basic.js",
+		"/C/Users/Patricio/Documents/websites/maxxis/sftp-config.json",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/plugins/really-simple-breadcrumb/breadcrumb.php",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/js/jcarousel/jcarousel.min.js",
+		"/C/Users/Patricio/Documents/websites/maxxis/zoom/demos/demo_innerzoom.html",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/js/jqzoom/jquery.jqzoom-core.js",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/js/fancybox/jquery.fancybox.css",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/js/fancybox/demo/iframe.html",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/js/fancybox/demo/index.html",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/js/ion/js/ion-zoom/ion.zoom.js",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/js/ion/js/ion-zoom/ion.zoom.min.js",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/js/ion/js/ion-zoom/jquery.js",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/js/ion/css/ion.zoom.css",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/heder.php",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/index.html",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-content/themes/maxxis/css/bootstrap.css",
+		"/C/Users/Patricio/Documents/websites/maxxis/wp-config.php",
+		"/C/Users/Patricio/Documents/websites/maxxis/form/form.html",
+		"/C/Users/Patricio/Documents/websites/maxxis/form/js/jquery.validate.locale.es.js",
+		"/C/Users/Patricio/Documents/websites/maxxis/form/js/jquery.validate.js",
+		"/C/Users/Patricio/Documents/websites/maxxis/form/js/jquery.js",
+		"/C/Users/Patricio/Documents/websites/mrrosesfarms/wheredoirun.com/wp-content/themes/wdir/page-share-trail.php",
+		"/C/Users/Patricio/Documents/websites/mrrosesfarms/wheredoirun.com/wp-content/themes/wdir/archive-wdir_trails.php",
+		"/C/Users/Patricio/Documents/websites/mrrosesfarms/wheredoirun.com/demo/zip.php",
+		"/C/Users/Patricio/Documents/websites/mrrosesfarms/wheredoirun.com/wp-content/themes/wdir/category-1119.php",
+		"/C/Users/Patricio/Documents/websites/mrrosesfarms/wheredoirun.com/wp-content/uploads/2014/04/meli3.kml.kmz",
+		"/C/Users/Patricio/Documents/websites/mrrosesfarms/wheredoirun.com/demo/mapa.zip",
+		"/C/Users/Patricio/Documents/websites/mrrosesfarms/wheredoirun.com/activity_369321362.kmz",
+		"/C/Users/Patricio/Documents/websites/mrrosesfarms/wheredoirun.com/demo/map.html",
+		"/C/Users/Patricio/Documents/websites/mrrosesfarms/wheredoirun.com/activity_369321362.kml",
+		"/C/Users/Patricio/Documents/websites/mrrosesfarms/wp-content/themes/eStore/includes/scripts.php",
+		"/C/Users/Patricio/Documents/websites/mrrosesfarms/wp-content/themes/eStore/includes/single-product.php",
+		"/C/Users/Patricio/Documents/websites/mrrosesfarms/wp-content/plugins/eshop/cart-functions.php",
+		"/C/Users/Patricio/Documents/websites/mrrosesfarms/wp-content/plugins/eshop/checkout.php",
+		"/C/Users/Patricio/Documents/websites/mrrosesfarms/wp-content/plugins/eshop/eshop-install.php",
+		"/C/Users/Patricio/Documents/websites/mrrosesfarms/wp-content/themes/eStore/footer.php",
+		"/C/Users/Patricio/Documents/websites/mrrosesfarms/wp-content/themes/eStore/includes/single-product-cart.php",
+		"/C/Users/Patricio/Documents/websites/mrrosesfarms/wp-content/themes/eStore/single.php",
+		"/C/Users/Patricio/Documents/websites/mrrosesfarms/wp-content/themes/eStore/page-cart.php",
+		"/C/Users/Patricio/Documents/websites/mrrosesfarms/wp-content/plugins/eshop/eshop-add-cart.php",
+		"/C/Users/Patricio/Documents/websites/mrrosesfarms/wp-content/themes/eStore/includes/functions/additional_functions.php",
+		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-includes/class-wp-xmlrpc-server.bak.php",
+		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-content/themes/wdir/category-1145.php",
+		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-content/plugins/xml-rpc-modernization/wp-xmlrpc-modernization.php",
+		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-content/plugins/xml-rpc-modernization/class-wp-xmlrpc-server-ext.php",
+		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-content/themes/wdir/functions.php",
+		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/xmlrpc.php",
+		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-content/themes/wdir/functions.css",
+		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-config.php",
+		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-content/plugins/super-post-cleaner/readme.txt",
+		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-content/plugins/super-post-cleaner/superPostCleaner.php",
+		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-content/themes/wdir/category-1119.php",
+		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-content/themes/wdir/category-4.php",
+		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-content/themes/wdir/header.php",
+		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-content/themes/wdir/page_home.php",
+		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-content/themes/wdir/style.css"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"",
+			"C:\\Users\\Patricio\\Documents\\websites\\mrrosesfarms\\wp-content",
+			"C:\\Users\\Patricio\\Documents\\websites\\mrrosesfarms\\wp-content\\themes\\eStore",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"Nuevo",
+			"btnNuevo",
+			"<br/>",
+			"\">\n",
+			"showPreloader",
+			"ID",
+			".datepicker(",
+			"Red roses",
+			"$_POST['ship_name']",
+			"INSERT INTO $detailstable",
+			"INSERT INTO",
+			"Shipping Address",
+			"CONTACT DETAILS",
+			"Shipping Address",
+			"DDate",
+			"Invalid post type",
+			"newpost",
+			"wxm_insert_post",
+			"Invalid post type",
+			"401",
+			"wxm_insert_post",
+			"wp.newPost",
+			"#sidebar .upcomingRaces",
+			"news_text",
+			"important",
+			"__DIR__ ",
+			"\\Exception",
+			".title",
+			"http://www.mrrosesfarms.com/shopping-cart/",
+			"get_trails_by_city"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			".upcomingRaces",
+			"Exception"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "php/classVideo.php",
+					"settings":
+					{
+						"buffer_size": 5209,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4153,
+								4153
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1545.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "php/test.php",
+					"settings":
+					{
+						"buffer_size": 672,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								614,
+								614
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 158.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 120.0,
+	"status_bar_visible": true
+}

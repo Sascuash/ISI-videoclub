@@ -5,6 +5,7 @@
       	<!-- Bootstrap -->
       	<link href="bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
       	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
       	<nav class="navbar navbar-default" role="navigation">
 		  <div class="container-fluid">

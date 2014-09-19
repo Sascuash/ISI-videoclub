@@ -104,6 +104,7 @@
 	    	return $salida;
 	    }
 
+<<<<<<< HEAD
 	    public function generaReporte($idSocio, $fechaActual) {
 	    	$this->mysqlConnect();
 	    	// buscamos el ultimo reporte
@@ -144,5 +145,7 @@
 	    }	
 
 
+=======
+>>>>>>> 98534350ba861136449b2f8611c6dcfde2189bcc
 	}
 ?>

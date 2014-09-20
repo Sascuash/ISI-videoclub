@@ -10,7 +10,7 @@
       	<nav class="navbar navbar-default" role="navigation">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header" style="margin-top:14px;">
+		    <div class="navbar-header" style="margin-top:14px;margin-bottom:5px;">
 			    <font size=6>Videoclub</font>&emsp;
 		    </div>
 		

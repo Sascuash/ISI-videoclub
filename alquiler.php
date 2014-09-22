@@ -12,6 +12,12 @@
 		
 		$video->insertaAlquiler($recogida, $devolucion, $pagoTotal, $_SESSION["idSocio"], $lista);
 
+		?>
+		<script type="text/javascript">
+			alert("Alquiler realizado");
+		</script>
+		<?php
+
 	}
 ?>
 

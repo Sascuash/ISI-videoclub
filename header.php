@@ -16,11 +16,24 @@
 		
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav" style="margin-top:4px;">
+		      <ul class="nav navbar-nav navbar-left" style="margin-top:4px;">
 		        <li class="active"><a href="index.php">Inicio</a></li>
 				<li><a href="alta.php">Alta</a></li>
 				<li class="active"><a href="alquiler.php">Alquiler</a></li>
 				<li><a href="consultaUsuario.php">Consulta</a></li>
+			  </ul>
+			  <ul class="nav navbar-nav navbar-right" style="margin-top:4px;">
+		      	<?php
+			    echo '<li class="active"><a>';
+				if (isset($_SESSION["idSocio"])) {
+					echo 'Socio actual: '.$_SESSION["idSocio"].' ';
+				}
+				echo '&emsp;&emsp;';
+				if (isset($_SESSION["idVideoclub"])) {
+					echo 'Videoclub actual: '.$_SESSION["idVideoclub"].' ';
+				}
+				echo '</a></li>';
+			?>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -28,17 +41,5 @@
 
 	</head>
 	<body style="margin-left:5%; margin-right:5%;">
-		<div class="row">
-			<?php
-			    echo '<p>';
-				if (isset($_SESSION["idSocio"])) {
-					echo 'Socio actual: '.$_SESSION["idSocio"].' ';
-				}
-				echo ' ';
-				if (isset($_SESSION["idVideoclub"])) {
-					echo 'Videoclub actual: '.$_SESSION["idVideoclub"].' ';
-				}
-				echo '</p>';
-			?>
-		</div>
+
 		

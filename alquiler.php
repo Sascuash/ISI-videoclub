@@ -58,7 +58,7 @@
 			<form method="post" action="">
 				<h2>Listado de peliculas</h2>
 				<p>
-					<?php echo $video->listaPeliculas(); ?>
+					<?php echo $video->listaPeliculas($_SESSION["idVideoclub"]); ?>
 				</p>
  				<input type="hidden" id="oculta" value="" name="oculta"/>
  				<input type="hidden" id="precioTotal" value="" name="precioTotal"/>
@@ -69,7 +69,7 @@
  				<h2>Alquiler</h2>
  				<p>
  					<label>Fecha Recogida</label>
- 					<input type="text" name="txtFechaRecogida" value="<?php echo date("Y-m-d"); ?>" id="txtFechaRecogida"/>
+ 					<input type="text" name="txtFechaRecogida" value="<?php echo date("Y-m-d"); ?>" id="txtFechaRecogida" readonly="readonly"/>
  				</p>
  				<p>
  					<label>Fecha Devolucion</label>
@@ -112,6 +112,11 @@
  				<p>
  					<label>Precio pelicula:</label>
  					<input type="text" name="txtNuevoPrecio" value="" id="txtNuevoPrecio"/>
+ 				</p>
+ 				<p>
+ 					<label>Videoclub:</label>
+ 					<?php echo $video->listaVideoclubs($_SESSION["idVideoclub"]); ?>
+ 					
  				</p>
  				<p>
  					<label>&nbsp;</label>

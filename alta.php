@@ -72,6 +72,7 @@
  				<input class="btn btn-primary" type="submit" value="Seleccionar" id="btnSeleccionar" name="btnSeleccionar"/>
  			</p>
  		</div>
+ 		<!--
  		<div class="span4">
  			<h3>Nuevo videoclub:</h3>
  			<form method="post" action="">
@@ -97,5 +98,6 @@
  				</p>
  			</form>
  		</div>
+ 		//-->
  	</form>
 <?php include ("footer.php"); ?>

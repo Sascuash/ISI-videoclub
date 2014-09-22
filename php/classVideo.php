@@ -1,4 +1,5 @@
 <?php
+	error_reporting(E_ERROR);
 	class classVideo {
 	
 		private $dbHost="localhost";
@@ -62,7 +63,7 @@
 
 	    public function insertaAlquiler($fechaRecogida, $fechaDevolucion, $pago, $idSocio, $idPeliculas) {
 	    	$this->mysqlConnect();
-	    	if (date("Y-m-d",$fechaDevolucion)<=date("Y-m-d",$fechaRecogida)) {
+	    	if (strtotime($fechaDevolucion)<=strtotime($fechaRecogida)) {
 	    		return -1;
 	    	}
 
@@ -91,9 +92,17 @@
 			return $idInsertado;	
 	    }
 
-	    public function listaPeliculas() {
-	    	$this->mysqlConnect();
-	    	$sql="SELECT * FROM video_pelicula ORDER BY nombre ASC";
+	    public function listaPeliculas($idVideoclub=-1) {
+	    	$this->mysqlConnect;
+	    	if ($idVideoclub==-1) {
+	    		$sql="SELECT * FROM video_pelicula ORDER BY nombre ASC";
+	    	} else {
+	    		$sql=sprintf("SELECT * FROM video_pelicula WHERE id_videoclub='%s' ORDER BY nombre ASC",
+	    			mysql_escape_string($idVideoclub)
+	    		);
+	    	}
+
+	    		    	
 	    	$datos=mysql_query($sql);
 	    	$salida='<select multiple id="selPelicula" name="selPelicula">';
 	    	while ($fila=mysql_fetch_array($datos)) {
@@ -115,13 +124,18 @@
 	    	return $salida;
 	    }
 
-	    public function listaVideoclubs() {
+	    public function listaVideoclubs($idVideoclubActual=-1) {
 	    	$this->mysqlConnect();
 	    	$sql="SELECT * FROM video_videoclub ORDER BY calle ASC";
 	    	$datos=mysql_query($sql);
 	    	$salida='<select id="selVideoclub" name="selVideoclub">';
 	    	while ($fila=mysql_fetch_array($datos)) {
-	    		$salida.='<option value="'.$fila["id"].'">'.$fila["calle"].'</option>';
+	    		if ($fila["id"]==$idVideoclubActual) {
+	    			$textoSelect=" selected";
+	    		} else {
+	    			$textoSelect="";
+	    		}
+	    		$salida.='<option value="'.$fila["id"].'" '.$textoSelect.'>'.$fila["calle"].'</option>';
 	    	}
 	    	$salida.="</select>";
 	    	return $salida;
@@ -163,6 +177,57 @@
 	    	mysql_query($sql);
 	    	$idInsertado=mysql_insert_id();
 			return $idInsertado;
+	    }
+
+	    public function generaReporteMes($idSocio, $mes) {
+	    	$this->mysqlConnect();
+	    	// buscamos el ultimo reporte
+	    	$fechaInicio=date("Y")."-".$mes."-1";
+	    	if ($mes==12) {
+	    		$fechaFin=(date("Y")+1)."-1-1";	
+	    	} else {
+	    		$fechaFin=date("Y")."-".($mes+1)."-1";
+	    	}
+	    	$reporteGenerado=-1;
+
+	    	$sql=sprintf("SELECT * FROM ".$this->dbPref."estadistica WHERE id_socio='%s' AND fecha_generacion>='%s' AND fecha_generacion<'%s'",
+	    		mysql_escape_string($idSocio),
+	    		mysql_escape_string($fechaInicio),
+	    		mysql_escape_string($fechaFin)
+	    	);
+	    	$datos=mysql_query($sql);
+	    	if (mysql_num_rows($datos)==1) {
+	    		$reporteGenerado=-1;
+	    	} else {
+	    		// generamos el reporte en el rango de fechas
+		    	$sql=sprintf("SELECT id, pago FROM ".$this->dbPref."alquiler WHERE id_socio='%s' AND fecha_recogida>='%s' AND fecha_recogida<'%s'",
+		    		mysql_escape_string($idSocio),
+		    		mysql_escape_string($fechaInicio),
+		    		mysql_escape_string($fechaFin)
+		    	);
+		    	$datos=mysql_query($sql);
+		    	$totalPago=0;
+		    	while ($fila=mysql_fetch_array($datos)) {
+		    		$totalPago+=$fila["pago"];
+		    	}
+		    	if ($totalPago>0) {
+		    		// insertamos el total en estadistica
+			    	$sql=sprintf("INSERT INTO ".$this->dbPref."estadistica (id_socio, fecha_generacion, total) VALUES ('%s', '%s', '%s')",
+			    		mysql_escape_string($idSocio),
+			    		mysql_escape_string($fechaInicio),
+			    		mysql_escape_string($totalPago)
+			    	);
+			    	mysql_query($sql);
+			    	$reporteGenerado=mysql_insert_id();	
+		    	} else {
+		    		$reporteGenerado=-2;
+		    	}
+		    	
+					
+	    	} 
+	    	return $reporteGenerado;
+
+	    	
 	    }	
 
 	    public function muestraReportes($idSocio) {
@@ -187,7 +252,7 @@
 
 	    		while ($fila=mysql_fetch_array($datos)) {
 	    			$salida.='<tr>';
-	    				$salida.='<td>'.$fila["fecha_generacion"].'</td>';
+	    				$salida.='<td>'.substr($fila["fecha_generacion"],0,-3).'</td>';
 	    				$salida.='<td>'.$fila["total"].'</td>';
 	    				$valorTotal+=$fila["total"];
 	    			$salida.='</tr>';

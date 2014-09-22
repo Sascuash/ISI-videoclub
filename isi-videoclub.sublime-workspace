@@ -95,47 +95,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "php/classVideo.php",
-			"settings":
-			{
-				"buffer_size": 7500,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "sql/db.sql",
-			"settings":
-			{
-				"buffer_size": 9919,
-				"line_ending": "Windows",
-				"name": "-- phpMyAdmin SQL Dump"
-			}
-		},
-		{
-			"file": "header.php",
-			"settings":
-			{
-				"buffer_size": 1847,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "footer.php",
-			"settings":
-			{
-				"buffer_size": 479,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "alquiler.php",
-			"settings":
-			{
-				"buffer_size": 3393,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -165,10 +124,12 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Patricio/Documents/websites/ISI-video/header.php",
-		"/C/Users/Patricio/Documents/websites/ISI-video/footer.php",
-		"/C/Users/Patricio/Documents/websites/ISI-video/consultaUsuario.php",
 		"/C/Users/Patricio/Documents/websites/ISI-video/php/classVideo.php",
+		"/C/Users/Patricio/Documents/websites/ISI-video/alquiler.php",
+		"/C/Users/Patricio/Documents/websites/ISI-video/footer.php",
+		"/C/Users/Patricio/Documents/websites/ISI-video/header.php",
+		"/C/Users/Patricio/Documents/websites/ISI-video/sql/db.sql",
+		"/C/Users/Patricio/Documents/websites/ISI-video/consultaUsuario.php",
 		"/C/Users/Patricio/Documents/websites/ISI-video/php/test.php",
 		"/C/Users/Patricio/Documents/websites/ISI-video/sftp-config.json",
 		"/C/Users/Patricio/Documents/websites/ISI-video/inc/conexion.php",
@@ -290,9 +251,7 @@
 		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-config.php",
 		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-content/plugins/super-post-cleaner/readme.txt",
 		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-content/plugins/super-post-cleaner/superPostCleaner.php",
-		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-content/themes/wdir/category-1119.php",
-		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-content/themes/wdir/category-4.php",
-		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-content/themes/wdir/header.php"
+		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-content/themes/wdir/category-1119.php"
 	],
 	"find":
 	{
@@ -364,158 +323,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "php/classVideo.php",
-					"settings":
-					{
-						"buffer_size": 7500,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								176,
-								176
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "sql/db.sql",
-					"settings":
-					{
-						"buffer_size": 9919,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9919,
-								9919
-							]
-						],
-						"settings":
-						{
-							"auto_name": "-- phpMyAdmin SQL Dump",
-							"incomplete_sync": null,
-							"syntax": "Packages/SQL/SQL.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2968.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "header.php",
-					"settings":
-					{
-						"buffer_size": 1847,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1494,
-								1494
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "footer.php",
-					"settings":
-					{
-						"buffer_size": 479,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "alquiler.php",
-					"settings":
-					{
-						"buffer_size": 3393,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],

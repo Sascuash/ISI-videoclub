@@ -62,6 +62,10 @@
 
 	    public function insertaAlquiler($fechaRecogida, $fechaDevolucion, $pago, $idSocio, $idPeliculas) {
 	    	$this->mysqlConnect();
+	    	if (date("Y-m-d",$fechaDevolucion)<=date("Y-m-d",$fechaRecogida)) {
+	    		return -1;
+	    	}
+
 			$sql=sprintf("INSERT INTO ".$this->dbPref."alquiler (fecha_recogida, fecha_devolucion, pago, id_socio, id_peliculas) VALUES ('%s', '%s', '%s', '%s', '%s')",
 				mysql_escape_string($fechaRecogida),
 				mysql_escape_string($fechaDevolucion),

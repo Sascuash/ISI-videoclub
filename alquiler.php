@@ -10,13 +10,20 @@
 		$recogida=$_POST["txtFechaRecogida"];
 		$devolucion=$_POST["txtFechaDevolucion"];
 		
-		$video->insertaAlquiler($recogida, $devolucion, $pagoTotal, $_SESSION["idSocio"], $lista);
-
-		?>
-		<script type="text/javascript">
-			alert("Alquiler realizado");
-		</script>
-		<?php
+		if ($video->insertaAlquiler($recogida, $devolucion, $pagoTotal, $_SESSION["idSocio"], $lista)!=-1){
+			?>
+			<script type="text/javascript">
+				alert("Alquiler realizado");
+			</script>
+			<?php
+		}
+		else {
+			?>
+			<script type="text/javascript">
+				alert("La fecha de devolucion es incorrecta");
+			</script>
+			<?php
+		}
 
 	}
 

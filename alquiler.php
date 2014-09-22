@@ -19,12 +19,27 @@
 		<?php
 
 	}
+
+	if ($_POST["CrearPelicula"]=="CrearPelicula") {
+		$nombreNueva=$_POST["txtNuevoNombre"];
+		$directorNueva=$_POST["txtNuevoDirector"];
+		$fechaNueva=$_POST["txtNuevaFecha"];
+		$precioNueva=$_POST["txtNuevoPrecio"];
+
+		$video->insertaPelicula($nombreNueva, $directorNueva, $fechaNueva, $precioNueva, $_SESSION["idVideoclub"]);
+
+		?>
+		<script type="text/javascript">
+			alert("Pelicula insertada");
+		</script>
+		<?php
+	}
 ?>
 
 <?php include ("header.php"); ?>
 
 	<div class="row-fluid">
-		<div class="span6">
+		<div class="span4">
 			<form method="post" action="">
 				<h2>Listado de peliculas</h2>
 				<p>
@@ -63,6 +78,31 @@
   				<tbody id="myTableBody">
   				</tbody>
 			</table>
+ 		</div>
+ 		<div class="span4">
+ 			<h2>A&ntilde;adir Pelicula</h2>
+ 			<form method="post" action="">
+				<p>
+ 					<label>Nombre pelicula:</label>
+ 					<input type="text" name="txtNuevoNombre" value="" id="txtNuevoNombre"/>
+ 				</p>
+ 				<p>
+ 					<label>Director pelicula:</label>
+ 					<input type="text" name="txtNuevoDirector" value="" id="txtNuevoDirector"/>
+ 				</p>
+ 				<p>
+ 					<label>Fecha Estreno</label>
+ 					<input type="text" name="txtNuevaFecha" value="<?php $Date=date("Y-m-d"); ?>" id="txtNuevaFecha"/>
+ 				</p>
+ 				<p>
+ 					<label>Precio pelicula:</label>
+ 					<input type="text" name="txtNuevoPrecio" value="" id="txtNuevoPrecio"/>
+ 				</p>
+ 				<p>
+ 					<label>&nbsp;</label>
+ 					<input class="btn btn-success" type="submit" value="CrearPelicula" id="CrearPelicula" name="CrearPelicula"/>
+ 				</p>
+ 			</form>
  		</div>
  	</div>
 

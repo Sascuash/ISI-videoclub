@@ -99,15 +99,31 @@
 			"file": "php/classVideo.php",
 			"settings":
 			{
-				"buffer_size": 5209,
+				"buffer_size": 7500,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "php/test.php",
+			"file": "header.php",
 			"settings":
 			{
-				"buffer_size": 672,
+				"buffer_size": 1847,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "footer.php",
+			"settings":
+			{
+				"buffer_size": 479,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "alquiler.php",
+			"settings":
+			{
+				"buffer_size": 3393,
 				"line_ending": "Windows"
 			}
 		}
@@ -140,9 +156,11 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Patricio/Documents/websites/ISI-video/php/test.php",
-		"/C/Users/Patricio/Documents/websites/ISI-video/php/classVideo.php",
 		"/C/Users/Patricio/Documents/websites/ISI-video/header.php",
+		"/C/Users/Patricio/Documents/websites/ISI-video/footer.php",
+		"/C/Users/Patricio/Documents/websites/ISI-video/consultaUsuario.php",
+		"/C/Users/Patricio/Documents/websites/ISI-video/php/classVideo.php",
+		"/C/Users/Patricio/Documents/websites/ISI-video/php/test.php",
 		"/C/Users/Patricio/Documents/websites/ISI-video/sftp-config.json",
 		"/C/Users/Patricio/Documents/websites/ISI-video/inc/conexion.php",
 		"/C/Users/Patricio/Documents/websites/pintaconluz/thumb.php",
@@ -265,9 +283,7 @@
 		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-content/plugins/super-post-cleaner/superPostCleaner.php",
 		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-content/themes/wdir/category-1119.php",
 		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-content/themes/wdir/category-4.php",
-		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-content/themes/wdir/header.php",
-		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-content/themes/wdir/page_home.php",
-		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-content/themes/wdir/style.css"
+		"/C/Users/Pato/Documents/Aptana Studio 3 Workspace/mrrosesfarms/wheredoirun.com/wp-content/themes/wdir/header.php"
 	],
 	"find":
 	{
@@ -347,15 +363,15 @@
 					"file": "php/classVideo.php",
 					"settings":
 					{
-						"buffer_size": 5209,
+						"buffer_size": 7500,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4153,
-								4153
+								176,
+								176
 							]
 						],
 						"settings":
@@ -367,25 +383,84 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1545.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "php/test.php",
+					"file": "header.php",
 					"settings":
 					{
-						"buffer_size": 672,
+						"buffer_size": 1847,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								614,
-								614
+								1494,
+								1494
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "footer.php",
+					"settings":
+					{
+						"buffer_size": 479,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "alquiler.php",
+					"settings":
+					{
+						"buffer_size": 3393,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":

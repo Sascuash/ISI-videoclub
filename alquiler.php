@@ -26,13 +26,21 @@
 		$fechaNueva=$_POST["txtNuevaFecha"];
 		$precioNueva=$_POST["txtNuevoPrecio"];
 
-		$video->insertaPelicula($nombreNueva, $directorNueva, $fechaNueva, $precioNueva, $_SESSION["idVideoclub"]);
+		if ($video->insertaPelicula($nombreNueva, $directorNueva, $fechaNueva, $precioNueva, $_SESSION["idVideoclub"])!=-1) {
+			?>
+			<script type="text/javascript">
+				alert("Pelicula insertada");
+			</script>
+			<?php
+		} else {
+			?>
+			<script type="text/javascript">
+				alert("Pelicula ya existente");
+			</script>
+			<?php
+		}
 
-		?>
-		<script type="text/javascript">
-			alert("Pelicula insertada");
-		</script>
-		<?php
+		
 	}
 ?>
 

@@ -1,18 +1,18 @@
 <?php
 	class classVideo {
-	/*	
+	
 		private $dbHost="localhost";
 		private $dbUsername="root";
 		private $dbPassword="";
 		private $dbNombre="isi";
 		private $dbPref="video_";
-	*/	
+		/*	
 		private $dbHost="mysql9.rl-host.com";
 		private $dbUsername="patolin_isi";
 		private $dbPassword="isi2014";
 		private $dbNombre="patolin_isi";
 		private $dbPref="video_";
-	
+	*/
 		private function mysqlConnect() {
 	        mysql_connect($this->dbHost,$this->dbUsername,$this->dbPassword);
 	        mysql_select_db($this->dbNombre) or die("Error de conexion con la base de datos");
@@ -36,6 +36,18 @@
 
 	    public function insertaPelicula($nombre, $director, $fechaEstreno, $precio, $idVideoclub) {
 	    	$this->mysqlConnect();
+
+	    	// verificamos que no exista una pelicula con el mismo nombre
+	    	$sql=sprintf("SELECT * FROM ".$this->dbPref."pelicula WHERE nombre='%s' AND id_videoclub='%s'",
+	    		mysql_escape_string($nombre),
+	    		mysql_escape_string($idVideoclub)
+	    	);
+	    	$datos=mysql_query($sql);
+	    	if (mysql_num_rows($datos)>0) {
+	    		// existe la pelicula
+	    		return -1;
+	    	}
+
 			$sql=sprintf("INSERT INTO ".$this->dbPref."pelicula (nombre, director, fecha_estreno, precio, id_videoclub) VALUES ('%s', '%s', '%s', '%s', '%s')",
 				mysql_escape_string($nombre),
 				mysql_escape_string($director),

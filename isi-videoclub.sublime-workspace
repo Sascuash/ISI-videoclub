@@ -104,6 +104,15 @@
 			}
 		},
 		{
+			"file": "sql/db.sql",
+			"settings":
+			{
+				"buffer_size": 9919,
+				"line_ending": "Windows",
+				"name": "-- phpMyAdmin SQL Dump"
+			}
+		},
+		{
 			"file": "header.php",
 			"settings":
 			{
@@ -355,7 +364,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -390,6 +399,36 @@
 				},
 				{
 					"buffer": 1,
+					"file": "sql/db.sql",
+					"settings":
+					{
+						"buffer_size": 9919,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9919,
+								9919
+							]
+						],
+						"settings":
+						{
+							"auto_name": "-- phpMyAdmin SQL Dump",
+							"incomplete_sync": null,
+							"syntax": "Packages/SQL/SQL.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2968.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "header.php",
 					"settings":
 					{
@@ -419,7 +458,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "footer.php",
 					"settings":
 					{
@@ -448,7 +487,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "alquiler.php",
 					"settings":
 					{

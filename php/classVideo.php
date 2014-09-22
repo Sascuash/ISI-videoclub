@@ -1,11 +1,18 @@
 <?php
 	class classVideo {
+	/*	
 		private $dbHost="localhost";
 		private $dbUsername="root";
 		private $dbPassword="";
 		private $dbNombre="isi";
 		private $dbPref="video_";
-
+	*/	
+		private $dbHost="mysql9.rl-host.com";
+		private $dbUsername="patolin_isi";
+		private $dbPassword="isi2014";
+		private $dbNombre="patolin_isi";
+		private $dbPref="video_";
+	
 		private function mysqlConnect() {
 	        mysql_connect($this->dbHost,$this->dbUsername,$this->dbPassword);
 	        mysql_select_db($this->dbNombre) or die("Error de conexion con la base de datos");
@@ -191,6 +198,22 @@
 	    	if (mysql_num_rows($datos)==1) {
 	    		$fila=mysql_fetch_array($datos);
 	    		$salida=$fila["nombre"];
+	    	} else {
+	    		$salida="";
+	    	}
+	    	return $salida;
+	    }
+
+	    public function obtieneNombreVideoclub($idVideo) {
+	    	$this->mysqlConnect();
+	    	// buscamos el ultimo reporte
+	    	$sql=sprintf("SELECT * FROM ".$this->dbPref."videoclub WHERE id='%s' LIMIT 0,1",
+	    		mysql_escape_string($idVideo)
+	    	); 
+	    	$datos=mysql_query($sql);
+	    	if (mysql_num_rows($datos)==1) {
+	    		$fila=mysql_fetch_array($datos);
+	    		$salida=$fila["calle"];
 	    	} else {
 	    		$salida="";
 	    	}

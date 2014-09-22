@@ -1,3 +1,7 @@
+<?php
+	$videoHeader=new classVideo();
+	session_start();
+?>
 <html>
 	<head>
  		<title>Selección de videoclub</title>
@@ -26,11 +30,11 @@
 		      	<?php
 			    echo '<li class="active"><a>';
 				if (isset($_SESSION["idSocio"])) {
-					echo 'Socio actual: '.$_SESSION["idSocio"].' ';
+					echo 'Socio actual: '.$videoHeader->obtieneNombreSocio($_SESSION["idSocio"]).' ';
 				}
 				echo '&emsp;&emsp;';
 				if (isset($_SESSION["idVideoclub"])) {
-					echo 'Videoclub actual: '.$_SESSION["idVideoclub"].' ';
+					echo 'Videoclub actual: '.$videoHeader->obtieneNombreVideoclub($_SESSION["idVideoclub"]).' ';
 				}
 				echo '</a></li>';
 			?>

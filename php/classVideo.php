@@ -13,6 +13,7 @@
 		private $dbNombre="patolin_isi";
 		private $dbPref="video_";
 	
+	
 		private function mysqlConnect() {
 	        mysql_connect($this->dbHost,$this->dbUsername,$this->dbPassword);
 	        mysql_select_db($this->dbNombre) or die("Error de conexion con la base de datos");

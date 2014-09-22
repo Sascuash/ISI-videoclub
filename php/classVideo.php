@@ -6,13 +6,13 @@
 		private $dbPassword="";
 		private $dbNombre="isi";
 		private $dbPref="video_";
-		/*	
+/*	
 		private $dbHost="mysql9.rl-host.com";
 		private $dbUsername="patolin_isi";
 		private $dbPassword="isi2014";
 		private $dbNombre="patolin_isi";
 		private $dbPref="video_";
-	*/
+*/
 		private function mysqlConnect() {
 	        mysql_connect($this->dbHost,$this->dbUsername,$this->dbPassword);
 	        mysql_select_db($this->dbNombre) or die("Error de conexion con la base de datos");
